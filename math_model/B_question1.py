@@ -14,7 +14,7 @@ for x in distances:
     w = w1 + w2
     print(w1,w2)
     if w2_before:
-        eta = 1 - 200 / (w2_before + w1)
+        eta = 1 - 200 / (w2 + w1)
     else:
         eta = 0
     w1_before, w2_before = w1, w2
