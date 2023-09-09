@@ -25,4 +25,10 @@ for beta in angle:
         w = w1 + w2
         result_df = result_df.append({"i": k, "j": distance.index(i) + 1, "ans": w}, ignore_index=True)
 
-result_df.to_excel(excel_file, index=False)
+# 使用 pivot 方法将数据重新排列为适合的形式
+pivot_table = result_df.pivot(index="i", columns="j", values="ans")
+
+# 将生成的表格保存到 Excel 文件
+pivot_table.to_excel(excel_file)
+
+print(f"表格已生成并保存到 {excel_file}")
