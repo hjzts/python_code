@@ -23,8 +23,9 @@ for beta in angle:
         w1 = D * math.sin(theta / 2) * 1 / math.cos(theta / 2 + gamma)
         w2 = D * math.sin(theta / 2) * 1 / math.cos(theta / 2 - gamma)
         w = w1 + w2
+        print({"{:10.6f}".format(w)},end='\t')
         result_df = result_df.append({"i": k, "j": distance.index(i) + 1, "ans": w}, ignore_index=True)
-
+    print()
 # 使用 pivot 方法将数据重新排列为适合的形式
 pivot_table = result_df.pivot(index="i", columns="j", values="ans")
 
