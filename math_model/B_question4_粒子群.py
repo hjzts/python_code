@@ -7,8 +7,9 @@ df = pd.read_excel(excel_file, sheet_name="Sheet1")
 
 for i in range(1,252):
     for j in range(2,202):
-        print(df.iloc[i,j],end='\t')
-    print('\n')
+        pass
+        # print(df.iloc[i,j],end='\t')
+    # print('\n')
 
 # 参数设置
 num_particles = 30
