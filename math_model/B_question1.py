@@ -1,3 +1,4 @@
+# 导入模块
 import math
 
 # 定义相关常量
@@ -27,4 +28,5 @@ for x in distances:
     else:
         eta = 0
     w1_before, w2_before = w1, w2
+    # 格式化输出
     print("{:15.6f}".format(D), "{:15.6f}".format(w), "{:15.6f}".format(eta))

@@ -19,11 +19,11 @@ def get_gamma(beta):
 
 # 定义角度列表和距离海域中心处的距离列表
 angle = [0, PI / 4, PI / 2, 3 * PI / 4, PI, 5 * PI / 4, 3 * PI / 2, 7 * PI / 4]
-distance = [0.3 * 1852, 0.6 * 1852, 0.9 * 1852, 1.2 * 1852, 1.5 * 1852, 1.8 * 1852, 2.1 * 1852]
+distance = [0,0.3 * 1852, 0.6 * 1852, 0.9 * 1852, 1.2 * 1852, 1.5 * 1852, 1.8 * 1852, 2.1 * 1852]
 
 # 利用双重循环计算并得到结果，同时将结果保存到result_df中，并将结果打印出来
 for beta in angle:
-    k = angle.index(beta) + 1  # 获取 beta 的索引并加1以作为 "i" 的值
+    k = angle(beta) + 1  # 获取 beta 的索引并加1以作为 "i" 的值
     for i in distance:
         # 修正坡度角为gamma
         gamma = get_gamma(beta)

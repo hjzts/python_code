@@ -1,10 +1,12 @@
+# 导入模块
 import random
 import numpy as np
 import pandas as pd
+# 引入附件文件
 excel_file = "附件.xlsx"
 df = pd.read_excel(excel_file, sheet_name="Sheet1")
 
-
+# 对附件文件信息分析
 for i in range(1,252):
     for j in range(2,202):
         pass
