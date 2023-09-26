@@ -1,4 +1,4 @@
-import random
+import myRandom
 import math
 import numpy as np
 

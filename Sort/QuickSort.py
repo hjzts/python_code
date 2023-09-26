@@ -1,4 +1,4 @@
-import random
+import myRandom
 
 def QuickSortPivot(a, start, end):
     randIdx = random.randint(start,end)

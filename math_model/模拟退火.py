@@ -1,7 +1,7 @@
 # Author hugo
 # Time 2023/9/7 22:19
 import math
-import random
+import myRandom
 
 
 # 定义要优化的目标函数

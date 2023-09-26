@@ -28,6 +28,7 @@ scores = {'张三': 100, '李四': 98, '夏神': 150, '王五': 45}
 print(scores)
 print(type(scores))
 student = dict(name='jack', age=20)
+# student = dict('jack',20)
 print(student)
 # 空字典
 d = {}

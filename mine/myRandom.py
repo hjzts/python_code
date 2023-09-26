@@ -1,6 +1,6 @@
 # Author hugo
 # Time 2023/6/7 20:07
-import random
+import myRandom
 number = random.randint(95,99)
 print("吴鹄远",":-",number)
 number = random.randint(95,99)

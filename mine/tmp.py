@@ -1,4 +1,4 @@
-import pygame,sys,random
+import pygame,sys,myRandom
 from pygame.locals import *
 class MyBallClass(pygame.sprite.Sprite):
     def __init__(self,image_file,location,speed):

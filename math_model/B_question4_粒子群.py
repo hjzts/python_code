@@ -1,5 +1,5 @@
 # 导入模块
-import random
+import myRandom
 import numpy as np
 import pandas as pd
 # 引入附件文件
